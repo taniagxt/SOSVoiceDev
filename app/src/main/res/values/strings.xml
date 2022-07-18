@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Final</string>
+
+    <string-array name="hospitales">
+        <item>Seleccione hospital donde labora</item>
+        <item>IMSS Hospital Regional 70</item>
+        <item>Hospital General de México</item>
+        <item>ISSSTE Hospital Zaragoza</item>
+        <item>IMSS Hospital Troncoso</item>
+    </string-array>
+
+    <string-array name="especialidad">
+        <item>Seleccione especialidad</item>
+        <item>Ginecología y Obstreticia</item>
+        <item>Traumatología</item>
+        <item>Neurología</item>
+        <item>Neumología</item>
+    </string-array>
 </resources>
+

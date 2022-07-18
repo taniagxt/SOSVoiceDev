@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#FFFBEF"
+    android:backgroundTintMode="add"
     tools:context=".Registro">
 
     <TextView
@@ -69,20 +70,38 @@
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <EditText
+        android:id="@+id/numemp"
         android:layout_width="350dp"
         android:layout_height="38dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="12dp"
-        android:background="@color/black"
-        android:backgroundTint="#FFFBEF"
-        android:backgroundTintMode="add"
         android:ems="10"
         android:inputType="number"
-        android:text=" Introduce tu numero de empleado"
-        android:textStyle="bold"
-        android:textColor="#304d94"
+        android:text="Introduce tu numero de empleado"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Spinner
+        android:id="@+id/hospitales"
+        android:entries="@array/hospitales"
+        android:layout_width="349dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numemp" />
+
+    <Spinner
+        android:id="@+id/especialidad"
+        android:entries="@array/especialidad"
+        android:layout_width="349dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hospitales" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
